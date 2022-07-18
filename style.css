@@ -5,6 +5,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #E5E5E5;
+
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +81,58 @@ hr {
     margin-left: 16px;
 }
 
-.blog-info a {
+a {
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+
+/* top courses */
+.top-courses-container {
+    width: 870px;
+    height: 362px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.top-cours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 33px;
+}
+
+.course-info img {
+    width: 224px;
+    height: 105px;
+}
+
+.course-info h2 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+.rating .empty {
+    color: grey;
+}
+
+.time {
+    background-color: lightcoral;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 3px 15px;
+}
+
+.fa-clock {
+    margin-right: 3px;
 }
