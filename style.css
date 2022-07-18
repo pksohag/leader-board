@@ -90,7 +90,7 @@ a {
 /* top courses */
 .top-courses-container {
     width: 870px;
-    height: 362px;
+    height: 400px;
     background-color: white;
     margin-top: 15px;
     border-radius: 5px;
@@ -99,7 +99,14 @@ a {
 .top-cours {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 33px;
+    margin-left: 23px;
+}
+
+.course-info {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin: 0 10px 10px 0;
 }
 
 .course-info img {
@@ -135,4 +142,33 @@ a {
 
 .fa-clock {
     margin-right: 3px;
+}
+
+/* media query for mobile*/
+@media only screen and (max-width:688px) {
+
+    .top-player-container,
+    .top-courses-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-players,
+    .top-blog-container,
+    .top-cours {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .blogs {
+        flex-direction: column;
+    }
+
+    .course-info {
+        margin-top: 20px;
+    }
 }
